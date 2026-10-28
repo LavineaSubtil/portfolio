@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Lavínea Subtil · Front-end e UI/UX</title>
+  <meta name="description" content="Portfólio de Lavínea Subtil, desenvolvedora full stack com foco em front-end e UI/UX, de Serra/ES. Experiência no Banestes Asset Management, criadora da persona Alana e do Projeto Sururu.">
+  <meta property="og:title" content="Lavínea Subtil · Front-end e UI/UX">
+  <meta property="og:description" content="Desenvolvedora full stack com foco em front-end e UI/UX. Serra/ES.">
+  <meta property="og:image" content="assets/lavinea.webp">
+  <meta name="theme-color" content="#120A24">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    try { if (localStorage.getItem('tema') === 'light') document.documentElement.setAttribute('data-theme', 'light'); } catch (e) {}
+  </script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="logo" href="#inicio">lavínea<span>.dev</span></a>
+    <div class="nav-right">
+      <nav aria-label="Seções">
+        <a href="#sobre">Sobre</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="nav-tools">
+        <button class="theme-toggle" type="button" id="tema" aria-label="Mudar para o tema claro">
+          <svg class="ico-moon" viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true" fill="var(--accent)"><path d="M3 0h3v1H3zM2 1h1v1H2zM1 2h1v5H1zM2 7h1v1H2zM3 8h4v1H3zM7 7h1v1H7zM8 5h1v2H8zM6 5h2v1H6zM5 4h1v1H5zM4 2h1v2H4zM3 1h1v1H3z"/></svg>
+          <svg class="ico-sun" viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true" fill="#F2A900"><path d="M3 2h3v1H3zM2 3h5v3H2zM3 6h3v1H3zM4 0h1v1H4zM4 8h1v1H4zM0 4h1v1H0zM8 4h1v1H8zM1 1h1v1H1zM7 1h1v1H7zM1 7h1v1H1zM7 7h1v1H7z"/></svg>
+        </button>
+        <a class="pbtn pbtn-wa" href="https://wa.me/5527992549714?text=Oi%2C%20Lav%C3%ADnea!%20Vi%20seu%20portf%C3%B3lio%20e%20queria%20conversar." target="_blank" rel="noopener"><span><svg class="wa-ico" viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true" fill="currentColor"><path d="M1 0h7v1H1zM0 1h1v5H0zM8 1h1v5H8zM1 6h2v1H1zM5 6h3v1H5zM2 7h1v2H2zM3 7h1v1H3zM2 3h1v1H2zM4 3h1v1H4zM6 3h1v1H6z"/></svg><span class="wa-txt">WhatsApp</span></span></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="tag-px">▶ player 1 · front-end &amp; ui/ux</p>
+        <h1>Oi, eu sou a Lavínea<span class="caret" aria-hidden="true">_</span></h1>
+        <p class="hero-sub">Desenvolvedora full stack com foco em front-end e UI/UX. Crio interfaces bonitas, organizadas e que fazem sentido para as pessoas, do protótipo no Figma ao código em React.</p>
+        <div class="actions">
+          <a class="pbtn pbtn-main" href="#projetos"><span>Ver meus projetos</span></a>
+          <a class="pbtn pbtn-light" href="https://wa.me/5527992549714?text=Oi%2C%20Lav%C3%ADnea!%20Vi%20seu%20portf%C3%B3lio%20e%20queria%20conversar." target="_blank" rel="noopener"><span><svg class="wa-ico" viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true" fill="currentColor"><path d="M1 0h7v1H1zM0 1h1v5H0zM8 1h1v5H8zM1 6h2v1H1zM5 6h3v1H5zM2 7h1v2H2zM3 7h1v1H3zM2 3h1v1H2zM4 3h1v1H4zM6 3h1v1H6z"/></svg>Falar no WhatsApp</span></a>
+        </div>
+        <ul class="hero-stack" aria-label="Tecnologias que uso">
+          <li>React</li><li>JavaScript</li><li>Tailwind</li><li>Supabase</li><li>Figma</li><li>Git</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual">
+        <div class="photo-window">
+          <svg class="px-cat" viewBox="0 0 20 18" shape-rendering="crispEdges" aria-hidden="true"><rect x="2" y="0" width="1" height="1" fill="var(--px-ink)"/><rect x="13" y="0" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="1" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="1" width="1" height="1" fill="var(--px-pink)"/><rect x="3" y="1" width="1" height="1" fill="var(--px-ink)"/><rect x="12" y="1" width="1" height="1" fill="var(--px-ink)"/><rect x="13" y="1" width="1" height="1" fill="var(--px-pink)"/><rect x="14" y="1" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="2" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="2" width="1" height="1" fill="var(--px-fur)"/><rect x="3" y="2" width="1" height="1" fill="var(--px-pink)"/><rect x="4" y="2" width="1" height="1" fill="var(--px-ink)"/><rect x="11" y="2" width="1" height="1" fill="var(--px-ink)"/><rect x="12" y="2" width="1" height="1" fill="var(--px-pink)"/><rect x="13" y="2" width="1" height="1" fill="var(--px-fur)"/><rect x="14" y="2" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="3" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="3" width="1" height="1" fill="var(--px-fur)"/><rect x="3" y="3" width="1" height="1" fill="var(--px-fur)"/><rect x="4" y="3" width="1" height="1" fill="var(--px-ink)"/><rect x="5" y="3" width="1" height="1" fill="var(--px-ink)"/><rect x="6" y="3" width="1" height="1" fill="var(--px-ink)"/><rect x="7" y="3" width="1" height="1" fill="var(--px-ink)"/><rect x="8" y="3" width="1" height="1" fill="var(--px-ink)"/><rect x="9" y="3" width="1" height="1" fill="var(--px-ink)"/><rect x="10" y="3" width="1" height="1" fill="var(--px-ink)"/><rect x="11" y="3" width="1" height="1" fill="var(--px-ink)"/><rect x="12" y="3" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="3" width="1" height="1" fill="var(--px-fur)"/><rect x="14" y="3" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="4" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="4" width="1" height="1" fill="var(--px-fur)"/><rect x="3" y="4" width="1" height="1" fill="var(--px-fur)"/><rect x="4" y="4" width="1" height="1" fill="var(--px-fur)"/><rect x="5" y="4" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="4" width="1" height="1" fill="var(--px-fur)"/><rect x="7" y="4" width="1" height="1" fill="var(--px-fur)"/><rect x="8" y="4" width="1" height="1" fill="var(--px-fur)"/><rect x="9" y="4" width="1" height="1" fill="var(--px-fur)"/><rect x="10" y="4" width="1" height="1" fill="var(--px-fur)"/><rect x="11" y="4" width="1" height="1" fill="var(--px-fur)"/><rect x="12" y="4" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="4" width="1" height="1" fill="var(--px-fur)"/><rect x="14" y="4" width="1" height="1" fill="var(--px-ink)"/><rect x="0" y="5" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="2" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="3" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="4" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="5" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="7" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="8" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="9" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="10" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="11" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="12" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="14" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="15" y="5" width="1" height="1" fill="var(--px-ink)"/><rect x="0" y="6" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="6" width="1" height="1" fill="var(--px-fur)"/><rect x="2" y="6" width="1" height="1" fill="var(--px-fur)"/><rect x="5" y="6" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="6" width="1" height="1" fill="var(--px-fur)"/><rect x="7" y="6" width="1" height="1" fill="var(--px-fur)"/><rect x="8" y="6" width="1" height="1" fill="var(--px-fur)"/><rect x="9" y="6" width="1" height="1" fill="var(--px-fur)"/><rect x="10" y="6" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="6" width="1" height="1" fill="var(--px-fur)"/><rect x="14" y="6" width="1" height="1" fill="var(--px-fur)"/><rect x="15" y="6" width="1" height="1" fill="var(--px-ink)"/><rect x="0" y="7" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="7" width="1" height="1" fill="var(--px-fur)"/><rect x="2" y="7" width="1" height="1" fill="var(--px-fur)"/><rect x="5" y="7" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="7" width="1" height="1" fill="var(--px-fur)"/><rect x="7" y="7" width="1" height="1" fill="var(--px-fur)"/><rect x="8" y="7" width="1" height="1" fill="var(--px-fur)"/><rect x="9" y="7" width="1" height="1" fill="var(--px-fur)"/><rect x="10" y="7" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="7" width="1" height="1" fill="var(--px-fur)"/><rect x="14" y="7" width="1" height="1" fill="var(--px-fur)"/><rect x="15" y="7" width="1" height="1" fill="var(--px-ink)"/><rect x="0" y="8" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="8" width="1" height="1" fill="var(--px-fur)"/><rect x="2" y="8" width="1" height="1" fill="var(--px-fur)"/><rect x="3" y="8" width="1" height="1" fill="var(--px-fur)"/><rect x="4" y="8" width="1" height="1" fill="var(--px-fur)"/><rect x="5" y="8" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="8" width="1" height="1" fill="var(--px-fur)"/><rect x="7" y="8" width="1" height="1" fill="var(--px-pink)"/><rect x="8" y="8" width="1" height="1" fill="var(--px-pink)"/><rect x="9" y="8" width="1" height="1" fill="var(--px-fur)"/><rect x="10" y="8" width="1" height="1" fill="var(--px-fur)"/><rect x="11" y="8" width="1" height="1" fill="var(--px-fur)"/><rect x="12" y="8" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="8" width="1" height="1" fill="var(--px-fur)"/><rect x="14" y="8" width="1" height="1" fill="var(--px-fur)"/><rect x="15" y="8" width="1" height="1" fill="var(--px-ink)"/><rect x="0" y="9" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="9" width="1" height="1" fill="var(--px-fur)"/><rect x="2" y="9" width="1" height="1" fill="var(--px-blush)"/><rect x="3" y="9" width="1" height="1" fill="var(--px-fur)"/><rect x="4" y="9" width="1" height="1" fill="var(--px-fur)"/><rect x="5" y="9" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="9" width="1" height="1" fill="var(--px-ink)"/><rect x="7" y="9" width="1" height="1" fill="var(--px-fur)"/><rect x="8" y="9" width="1" height="1" fill="var(--px-fur)"/><rect x="9" y="9" width="1" height="1" fill="var(--px-ink)"/><rect x="10" y="9" width="1" height="1" fill="var(--px-fur)"/><rect x="11" y="9" width="1" height="1" fill="var(--px-fur)"/><rect x="12" y="9" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="9" width="1" height="1" fill="var(--px-blush)"/><rect x="14" y="9" width="1" height="1" fill="var(--px-fur)"/><rect x="15" y="9" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="10" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="10" width="1" height="1" fill="var(--px-fur)"/><rect x="3" y="10" width="1" height="1" fill="var(--px-fur)"/><rect x="4" y="10" width="1" height="1" fill="var(--px-fur)"/><rect x="5" y="10" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="10" width="1" height="1" fill="var(--px-fur)"/><rect x="7" y="10" width="1" height="1" fill="var(--px-ink)"/><rect x="8" y="10" width="1" height="1" fill="var(--px-ink)"/><rect x="9" y="10" width="1" height="1" fill="var(--px-fur)"/><rect x="10" y="10" width="1" height="1" fill="var(--px-fur)"/><rect x="11" y="10" width="1" height="1" fill="var(--px-fur)"/><rect x="12" y="10" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="10" width="1" height="1" fill="var(--px-fur)"/><rect x="14" y="10" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="11" width="1" height="1" fill="var(--px-ink)"/><rect x="3" y="11" width="1" height="1" fill="var(--px-ink)"/><rect x="4" y="11" width="1" height="1" fill="var(--px-fur)"/><rect x="5" y="11" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="11" width="1" height="1" fill="var(--px-fur)"/><rect x="7" y="11" width="1" height="1" fill="var(--px-fur)"/><rect x="8" y="11" width="1" height="1" fill="var(--px-fur)"/><rect x="9" y="11" width="1" height="1" fill="var(--px-fur)"/><rect x="10" y="11" width="1" height="1" fill="var(--px-fur)"/><rect x="11" y="11" width="1" height="1" fill="var(--px-fur)"/><rect x="12" y="11" width="1" height="1" fill="var(--px-ink)"/><rect x="13" y="11" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="12" width="1" height="1" fill="var(--px-ink)"/><rect x="3" y="12" width="1" height="1" fill="var(--px-fur)"/><rect x="4" y="12" width="1" height="1" fill="var(--px-fur)"/><rect x="5" y="12" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="12" width="1" height="1" fill="var(--px-fur)"/><rect x="7" y="12" width="1" height="1" fill="var(--px-fur)"/><rect x="8" y="12" width="1" height="1" fill="var(--px-fur)"/><rect x="9" y="12" width="1" height="1" fill="var(--px-fur)"/><rect x="10" y="12" width="1" height="1" fill="var(--px-fur)"/><rect x="11" y="12" width="1" height="1" fill="var(--px-fur)"/><rect x="12" y="12" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="12" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="13" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="13" width="1" height="1" fill="var(--px-fur)"/><rect x="3" y="13" width="1" height="1" fill="var(--px-fur)"/><rect x="4" y="13" width="1" height="1" fill="var(--px-fur)"/><rect x="5" y="13" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="13" width="1" height="1" fill="var(--px-fur)"/><rect x="7" y="13" width="1" height="1" fill="var(--px-fur)"/><rect x="8" y="13" width="1" height="1" fill="var(--px-fur)"/><rect x="9" y="13" width="1" height="1" fill="var(--px-fur)"/><rect x="10" y="13" width="1" height="1" fill="var(--px-fur)"/><rect x="11" y="13" width="1" height="1" fill="var(--px-fur)"/><rect x="12" y="13" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="13" width="1" height="1" fill="var(--px-fur)"/><rect x="14" y="13" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="14" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="14" width="1" height="1" fill="var(--px-fur)"/><rect x="3" y="14" width="1" height="1" fill="var(--px-fur)"/><rect x="4" y="14" width="1" height="1" fill="var(--px-ink)"/><rect x="5" y="14" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="14" width="1" height="1" fill="var(--px-fur)"/><rect x="7" y="14" width="1" height="1" fill="var(--px-fur)"/><rect x="8" y="14" width="1" height="1" fill="var(--px-fur)"/><rect x="9" y="14" width="1" height="1" fill="var(--px-fur)"/><rect x="10" y="14" width="1" height="1" fill="var(--px-fur)"/><rect x="11" y="14" width="1" height="1" fill="var(--px-ink)"/><rect x="12" y="14" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="14" width="1" height="1" fill="var(--px-fur)"/><rect x="14" y="14" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="15" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="15" width="1" height="1" fill="var(--px-fur)"/><rect x="3" y="15" width="1" height="1" fill="var(--px-fur)"/><rect x="4" y="15" width="1" height="1" fill="var(--px-ink)"/><rect x="5" y="15" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="15" width="1" height="1" fill="var(--px-fur)"/><rect x="7" y="15" width="1" height="1" fill="var(--px-fur)"/><rect x="8" y="15" width="1" height="1" fill="var(--px-fur)"/><rect x="9" y="15" width="1" height="1" fill="var(--px-fur)"/><rect x="10" y="15" width="1" height="1" fill="var(--px-fur)"/><rect x="11" y="15" width="1" height="1" fill="var(--px-ink)"/><rect x="12" y="15" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="15" width="1" height="1" fill="var(--px-fur)"/><rect x="14" y="15" width="1" height="1" fill="var(--px-ink)"/><rect x="15" y="15" width="1" height="1" fill="var(--px-ink)"/><rect x="16" y="15" width="1" height="1" fill="var(--px-ink)"/><rect x="17" y="15" width="1" height="1" fill="var(--px-ink)"/><rect x="18" y="15" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="16" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="3" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="4" y="16" width="1" height="1" fill="var(--px-ink)"/><rect x="5" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="7" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="8" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="9" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="10" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="11" y="16" width="1" height="1" fill="var(--px-ink)"/><rect x="12" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="14" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="15" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="16" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="17" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="18" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="19" y="16" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="3" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="4" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="5" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="6" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="7" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="8" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="9" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="10" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="11" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="12" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="13" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="14" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="15" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="16" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="17" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="18" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="3" y="6" width="1" height="1" fill="var(--px-ink)"/><rect x="4" y="6" width="1" height="1" fill="var(--px-ink)"/><rect x="11" y="6" width="1" height="1" fill="var(--px-ink)"/><rect x="12" y="6" width="1" height="1" fill="var(--px-ink)"/><rect x="3" y="7" width="1" height="1" fill="var(--px-ink)"/><rect x="4" y="7" width="1" height="1" fill="#fff"/><rect x="11" y="7" width="1" height="1" fill="var(--px-ink)"/><rect x="12" y="7" width="1" height="1" fill="#fff"/><g class="lids"><rect x="3" y="6" width="2" height="2" fill="var(--px-fur)"/><rect x="3" y="7" width="2" height="1" fill="var(--px-ink)"/><rect x="11" y="6" width="2" height="2" fill="var(--px-fur)"/><rect x="11" y="7" width="2" height="1" fill="var(--px-ink)"/></g></svg>
+          <div class="win-bar">
+            <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="win-title">lavinea.png</span>
+          </div>
+          <img src="assets/lavinea.webp" alt="Foto de Lavínea Subtil, de cabelo escuro na altura dos ombros e moletom preto" width="720" height="900">
+        </div>
+
+        <div class="code-card" aria-hidden="true">
+          <div class="code-bar"><span>sobre.js</span><i></i></div>
+<pre><code><span class="k">const</span> <span class="v">lavinea</span> = {
+  foco: [<span class="s">"front-end"</span>, <span class="s">"UI/UX"</span>],
+  stack: [<span class="s">"React"</span>, <span class="s">"Supabase"</span>],
+  cidade: <span class="s">"Serra/ES"</span>,
+  ama: <span class="s">"roxo"</span>,
+};</code></pre>
+        </div>
+
+        <span class="deco deco-heart"><svg class="px-heart" viewBox="0 0 7 7" shape-rendering="crispEdges" aria-hidden="true"><rect x="1" y="0" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="0" width="1" height="1" fill="var(--px-ink)"/><rect x="4" y="0" width="1" height="1" fill="var(--px-ink)"/><rect x="5" y="0" width="1" height="1" fill="var(--px-ink)"/><rect x="0" y="1" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="1" width="1" height="1" fill="var(--px-pink)"/><rect x="2" y="1" width="1" height="1" fill="var(--px-pink)"/><rect x="3" y="1" width="1" height="1" fill="var(--px-ink)"/><rect x="4" y="1" width="1" height="1" fill="var(--px-pink)"/><rect x="5" y="1" width="1" height="1" fill="var(--px-pink)"/><rect x="6" y="1" width="1" height="1" fill="var(--px-ink)"/><rect x="0" y="2" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="2" width="1" height="1" fill="var(--px-pink)"/><rect x="2" y="2" width="1" height="1" fill="#fff"/><rect x="3" y="2" width="1" height="1" fill="var(--px-pink)"/><rect x="4" y="2" width="1" height="1" fill="var(--px-pink)"/><rect x="5" y="2" width="1" height="1" fill="var(--px-pink)"/><rect x="6" y="2" width="1" height="1" fill="var(--px-ink)"/><rect x="0" y="3" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="3" width="1" height="1" fill="var(--px-pink)"/><rect x="2" y="3" width="1" height="1" fill="var(--px-pink)"/><rect x="3" y="3" width="1" height="1" fill="var(--px-pink)"/><rect x="4" y="3" width="1" height="1" fill="var(--px-pink)"/><rect x="5" y="3" width="1" height="1" fill="var(--px-pink)"/><rect x="6" y="3" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="4" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="4" width="1" height="1" fill="var(--px-pink)"/><rect x="3" y="4" width="1" height="1" fill="var(--px-pink)"/><rect x="4" y="4" width="1" height="1" fill="var(--px-pink)"/><rect x="5" y="4" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="5" width="1" height="1" fill="var(--px-ink)"/><rect x="3" y="5" width="1" height="1" fill="var(--px-pink)"/><rect x="4" y="5" width="1" height="1" fill="var(--px-ink)"/><rect x="3" y="6" width="1" height="1" fill="var(--px-ink)"/></svg></span>
+        <span class="deco deco-spark"><svg class="px-spark" viewBox="0 0 5 5" shape-rendering="crispEdges" aria-hidden="true"><rect x="2" y="0" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="1" width="1" height="1" fill="var(--px-ink)"/><rect x="0" y="2" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="2" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="2" width="1" height="1" fill="var(--px-pink)"/><rect x="3" y="2" width="1" height="1" fill="var(--px-ink)"/><rect x="4" y="2" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="3" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="4" width="1" height="1" fill="var(--px-ink)"/></svg></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="about" id="sobre">
+    <div class="wrap about-grid">
+      <div>
+        <h2>Design e código saindo da mesma cabeça</h2>
+        <p>Sou de Serra/ES e trabalho com front-end e UI/UX em projetos web e mobile: interfaces modernas, protótipos, sistemas internos e automações que tiram trabalho manual do caminho.</p>
+        <p>Gosto de cuidar das duas pontas, porque quando quem desenha também programa, nada se perde no meio do caminho. E sim, eu amo roxo.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>1 ano e 4 meses</dt><dd>de estágio em TI no Banestes</dd></div>
+        <div><dt>5º de 6</dt><dd>períodos de Análise e Desenvolvimento de Sistemas</dd></div>
+        <div><dt>1 a 2 horas</dt><dd>de trabalho manual eliminadas por automação</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIA -->
+  <section class="experience" id="experiencia">
+    <div class="wrap">
+      <p class="tag-px">experiência profissional</p>
+      <div class="job-head">
+        <div>
+          <h2>Banestes Asset Management</h2>
+          <p class="job-role">Estagiária de Tecnologia da Informação</p>
+        </div>
+        <p class="job-date"><time datetime="2025-02">fev 2025</time> – <time datetime="2026-06">jun 2026</time></p>
+      </div>
+      <p class="job-intro">Atuei no front-end e no UI/UX de sites, aplicativos e sistemas internos da gestora, sempre com foco em interfaces responsivas e centradas em quem usa.</p>
+
+      <div class="duties">
+        <article class="duty">
+          <h3>Site institucional</h3>
+          <p>Participei do desenvolvimento e do design do site do Banestes Investimentos.</p>
+        </article>
+        <article class="duty">
+          <h3>Persona Alana</h3>
+          <p>Criei a Alana do primeiro esboço à versão final. Ela foi usada no projeto e aparece no site.</p>
+        </article>
+        <article class="duty">
+          <h3>App de investimentos</h3>
+          <p>Cerca de um ano no front-end de um aplicativo em React, contribuindo também com UI/UX.</p>
+        </article>
+        <article class="duty">
+          <h3>Automações</h3>
+          <p>Scripts em Google Apps Script que automatizaram processos manuais de 1 a 2 horas.</p>
+        </article>
+        <article class="duty">
+          <h3>Sistemas internos</h3>
+          <p>Controle de estoque e movimentação de brindes, e um sistema de cadastro de agências.</p>
+        </article>
+        <article class="duty">
+          <h3>No dia a dia</h3>
+          <p>Git e GitHub para versionar e colaborar. Claude e Gemini para prototipar, revisar código e resolver problemas mais rápido.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="projects" id="projetos">
+    <div class="wrap">
+      <p class="tag-px">projetos</p>
+      <h2>Coisas que eu construí</h2>
+
+      <div class="project-grid">
+        <article class="card">
+          <a class="card-img" href="https://www.banestes.com.br/site/asset/" target="_blank" rel="noopener">
+            <div class="win-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win-title">banestes.com.br</span></div>
+            <img src="assets/banestes.webp" alt="Página inicial do site Banestes Asset Management" width="512" height="255" loading="lazy">
+          </a>
+          <div class="card-body">
+            <p class="card-kind">Site institucional</p>
+            <h3>Banestes Investimentos</h3>
+            <p>Site da gestora de fundos do Banestes. Trabalhei no front-end e no design das páginas, buscando uma navegação clara para quem quer conhecer os fundos.</p>
+            <ul class="tags"><li>Front-end</li><li>UI/UX</li><li>Responsivo</li></ul>
+            <a class="card-link" href="https://www.banestes.com.br/site/asset/" target="_blank" rel="noopener">Visitar o site</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img card-img-alana">
+            <div class="win-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win-title">alana.png</span></div>
+            <img src="assets/alana.webp" alt="Alana, personagem de cabelo rosa e traje azul-marinho com linhas de circuito" width="653" height="897" loading="lazy">
+          </div>
+          <div class="card-body">
+            <p class="card-kind">Ilustração e persona</p>
+            <h3>Alana</h3>
+            <p>A persona do Banestes Investimentos. Desenhei a Alana do esboço à arte final, e ela ganhou espaço no site da gestora.</p>
+            <ul class="tags"><li>Ilustração</li><li>Persona</li><li>Identidade</li></ul>
+            <a class="card-link" href="https://www.banestes.com.br/site/asset/#alana" target="_blank" rel="noopener">Ver a Alana no site</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img">
+            <div class="win-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="win-title">sururu</span></div>
+            <img src="assets/sururu.webp" alt="Tela de login do Projeto Sururu, com logo e foto de manguezal ao pôr do sol" width="512" height="286" loading="lazy">
+          </div>
+          <div class="card-body">
+            <p class="card-kind">Software de gestão <span class="badge">em desenvolvimento</span></p>
+            <h3>Projeto Sururu</h3>
+            <p>Sistema de gestão que estou construindo do zero: telas em React com Tailwind, e autenticação e banco de dados no Supabase.</p>
+            <ul class="tags"><li>React</li><li>Tailwind</li><li>Supabase</li><li>HTML</li><li>CSS</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills">
+    <div class="wrap skills-grid">
+      <div>
+        <p class="tag-px">inventário</p>
+        <h2>O que eu uso</h2>
+        <div class="skill-groups">
+          <div><h3>Front-end</h3><p>React, JavaScript (ES6+), HTML5, CSS3, Tailwind, Bootstrap</p></div>
+          <div><h3>Design</h3><p>Figma, prototipação, UI/UX e ilustração</p></div>
+          <div><h3>Dados e automação</h3><p>Supabase, Google Apps Script</p></div>
+          <div><h3>Ferramentas</h3><p>Git, GitHub, Claude, Gemini</p></div>
+        </div>
+      </div>
+      <div class="edu">
+        <h2>Formação</h2>
+        <ul class="edu-list">
+          <li><strong>Análise e Desenvolvimento de Sistemas</strong><span>Faculdade UCL, Campus Manguinhos. 5º de 6 períodos, conclusão prevista em dez/2026.</span></li>
+          <li><strong>Alura</strong><span>React, JavaScript e DOM, HTML e CSS, Git e GitHub. Em andamento.</span></li>
+          <li><strong>Inglês intermediário</strong><span>CCAA e aulas particulares.</span></li>
+        </ul>
+        <p class="soft">Responsável, aprendo rápido, sou proativa e gosto de construir em equipe.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- CONTATO -->
+<footer class="contact" id="contato">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="tag-px tag-px-dark">press start</p>
+      <h2>Vamos criar algo juntos?</h2>
+      <p class="contact-sub">Estou aberta a oportunidades e projetos em front-end e UI/UX.</p>
+      <ul class="contact-list">
+        <li><span class="lbl">e-mail</span><span class="val" id="email">lavineasubtil10@gmail.com</span><button class="copy" type="button" id="copy">Copiar</button></li>
+        <li><span class="lbl">whatsapp</span><span class="val">(27) 99254-9714</span></li>
+        <li><span class="lbl">cidade</span><span class="val">Serra, ES</span></li>
+      </ul>
+      <div class="actions">
+        <a class="pbtn pbtn-wa" href="https://wa.me/5527992549714?text=Oi%2C%20Lav%C3%ADnea!%20Vi%20seu%20portf%C3%B3lio%20e%20queria%20conversar." target="_blank" rel="noopener"><span><svg class="wa-ico" viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true" fill="currentColor"><path d="M1 0h7v1H1zM0 1h1v5H0zM8 1h1v5H8zM1 6h2v1H1zM5 6h3v1H5zM2 7h1v2H2zM3 7h1v1H3zM2 3h1v1H2zM4 3h1v1H4zM6 3h1v1H6z"/></svg>Chamar no WhatsApp</span></a>
+        <a class="pbtn pbtn-main" href="https://www.linkedin.com/in/lav%C3%ADnea-subtil-ba290a355" target="_blank" rel="noopener"><span>LinkedIn</span></a>
+        <a class="pbtn pbtn-light" href="https://github.com/LavineaSubtil" target="_blank" rel="noopener"><span>GitHub</span></a>
+      </div>
+    </div>
+    <blockquote>
+      <svg class="px-cat" viewBox="0 0 20 18" shape-rendering="crispEdges" aria-hidden="true"><rect x="2" y="0" width="1" height="1" fill="var(--px-ink)"/><rect x="13" y="0" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="1" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="1" width="1" height="1" fill="var(--px-pink)"/><rect x="3" y="1" width="1" height="1" fill="var(--px-ink)"/><rect x="12" y="1" width="1" height="1" fill="var(--px-ink)"/><rect x="13" y="1" width="1" height="1" fill="var(--px-pink)"/><rect x="14" y="1" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="2" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="2" width="1" height="1" fill="var(--px-fur)"/><rect x="3" y="2" width="1" height="1" fill="var(--px-pink)"/><rect x="4" y="2" width="1" height="1" fill="var(--px-ink)"/><rect x="11" y="2" width="1" height="1" fill="var(--px-ink)"/><rect x="12" y="2" width="1" height="1" fill="var(--px-pink)"/><rect x="13" y="2" width="1" height="1" fill="var(--px-fur)"/><rect x="14" y="2" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="3" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="3" width="1" height="1" fill="var(--px-fur)"/><rect x="3" y="3" width="1" height="1" fill="var(--px-fur)"/><rect x="4" y="3" width="1" height="1" fill="var(--px-ink)"/><rect x="5" y="3" width="1" height="1" fill="var(--px-ink)"/><rect x="6" y="3" width="1" height="1" fill="var(--px-ink)"/><rect x="7" y="3" width="1" height="1" fill="var(--px-ink)"/><rect x="8" y="3" width="1" height="1" fill="var(--px-ink)"/><rect x="9" y="3" width="1" height="1" fill="var(--px-ink)"/><rect x="10" y="3" width="1" height="1" fill="var(--px-ink)"/><rect x="11" y="3" width="1" height="1" fill="var(--px-ink)"/><rect x="12" y="3" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="3" width="1" height="1" fill="var(--px-fur)"/><rect x="14" y="3" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="4" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="4" width="1" height="1" fill="var(--px-fur)"/><rect x="3" y="4" width="1" height="1" fill="var(--px-fur)"/><rect x="4" y="4" width="1" height="1" fill="var(--px-fur)"/><rect x="5" y="4" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="4" width="1" height="1" fill="var(--px-fur)"/><rect x="7" y="4" width="1" height="1" fill="var(--px-fur)"/><rect x="8" y="4" width="1" height="1" fill="var(--px-fur)"/><rect x="9" y="4" width="1" height="1" fill="var(--px-fur)"/><rect x="10" y="4" width="1" height="1" fill="var(--px-fur)"/><rect x="11" y="4" width="1" height="1" fill="var(--px-fur)"/><rect x="12" y="4" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="4" width="1" height="1" fill="var(--px-fur)"/><rect x="14" y="4" width="1" height="1" fill="var(--px-ink)"/><rect x="0" y="5" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="2" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="3" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="4" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="5" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="7" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="8" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="9" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="10" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="11" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="12" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="14" y="5" width="1" height="1" fill="var(--px-fur)"/><rect x="15" y="5" width="1" height="1" fill="var(--px-ink)"/><rect x="0" y="6" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="6" width="1" height="1" fill="var(--px-fur)"/><rect x="2" y="6" width="1" height="1" fill="var(--px-fur)"/><rect x="5" y="6" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="6" width="1" height="1" fill="var(--px-fur)"/><rect x="7" y="6" width="1" height="1" fill="var(--px-fur)"/><rect x="8" y="6" width="1" height="1" fill="var(--px-fur)"/><rect x="9" y="6" width="1" height="1" fill="var(--px-fur)"/><rect x="10" y="6" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="6" width="1" height="1" fill="var(--px-fur)"/><rect x="14" y="6" width="1" height="1" fill="var(--px-fur)"/><rect x="15" y="6" width="1" height="1" fill="var(--px-ink)"/><rect x="0" y="7" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="7" width="1" height="1" fill="var(--px-fur)"/><rect x="2" y="7" width="1" height="1" fill="var(--px-fur)"/><rect x="5" y="7" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="7" width="1" height="1" fill="var(--px-fur)"/><rect x="7" y="7" width="1" height="1" fill="var(--px-fur)"/><rect x="8" y="7" width="1" height="1" fill="var(--px-fur)"/><rect x="9" y="7" width="1" height="1" fill="var(--px-fur)"/><rect x="10" y="7" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="7" width="1" height="1" fill="var(--px-fur)"/><rect x="14" y="7" width="1" height="1" fill="var(--px-fur)"/><rect x="15" y="7" width="1" height="1" fill="var(--px-ink)"/><rect x="0" y="8" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="8" width="1" height="1" fill="var(--px-fur)"/><rect x="2" y="8" width="1" height="1" fill="var(--px-fur)"/><rect x="3" y="8" width="1" height="1" fill="var(--px-fur)"/><rect x="4" y="8" width="1" height="1" fill="var(--px-fur)"/><rect x="5" y="8" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="8" width="1" height="1" fill="var(--px-fur)"/><rect x="7" y="8" width="1" height="1" fill="var(--px-pink)"/><rect x="8" y="8" width="1" height="1" fill="var(--px-pink)"/><rect x="9" y="8" width="1" height="1" fill="var(--px-fur)"/><rect x="10" y="8" width="1" height="1" fill="var(--px-fur)"/><rect x="11" y="8" width="1" height="1" fill="var(--px-fur)"/><rect x="12" y="8" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="8" width="1" height="1" fill="var(--px-fur)"/><rect x="14" y="8" width="1" height="1" fill="var(--px-fur)"/><rect x="15" y="8" width="1" height="1" fill="var(--px-ink)"/><rect x="0" y="9" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="9" width="1" height="1" fill="var(--px-fur)"/><rect x="2" y="9" width="1" height="1" fill="var(--px-blush)"/><rect x="3" y="9" width="1" height="1" fill="var(--px-fur)"/><rect x="4" y="9" width="1" height="1" fill="var(--px-fur)"/><rect x="5" y="9" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="9" width="1" height="1" fill="var(--px-ink)"/><rect x="7" y="9" width="1" height="1" fill="var(--px-fur)"/><rect x="8" y="9" width="1" height="1" fill="var(--px-fur)"/><rect x="9" y="9" width="1" height="1" fill="var(--px-ink)"/><rect x="10" y="9" width="1" height="1" fill="var(--px-fur)"/><rect x="11" y="9" width="1" height="1" fill="var(--px-fur)"/><rect x="12" y="9" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="9" width="1" height="1" fill="var(--px-blush)"/><rect x="14" y="9" width="1" height="1" fill="var(--px-fur)"/><rect x="15" y="9" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="10" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="10" width="1" height="1" fill="var(--px-fur)"/><rect x="3" y="10" width="1" height="1" fill="var(--px-fur)"/><rect x="4" y="10" width="1" height="1" fill="var(--px-fur)"/><rect x="5" y="10" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="10" width="1" height="1" fill="var(--px-fur)"/><rect x="7" y="10" width="1" height="1" fill="var(--px-ink)"/><rect x="8" y="10" width="1" height="1" fill="var(--px-ink)"/><rect x="9" y="10" width="1" height="1" fill="var(--px-fur)"/><rect x="10" y="10" width="1" height="1" fill="var(--px-fur)"/><rect x="11" y="10" width="1" height="1" fill="var(--px-fur)"/><rect x="12" y="10" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="10" width="1" height="1" fill="var(--px-fur)"/><rect x="14" y="10" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="11" width="1" height="1" fill="var(--px-ink)"/><rect x="3" y="11" width="1" height="1" fill="var(--px-ink)"/><rect x="4" y="11" width="1" height="1" fill="var(--px-fur)"/><rect x="5" y="11" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="11" width="1" height="1" fill="var(--px-fur)"/><rect x="7" y="11" width="1" height="1" fill="var(--px-fur)"/><rect x="8" y="11" width="1" height="1" fill="var(--px-fur)"/><rect x="9" y="11" width="1" height="1" fill="var(--px-fur)"/><rect x="10" y="11" width="1" height="1" fill="var(--px-fur)"/><rect x="11" y="11" width="1" height="1" fill="var(--px-fur)"/><rect x="12" y="11" width="1" height="1" fill="var(--px-ink)"/><rect x="13" y="11" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="12" width="1" height="1" fill="var(--px-ink)"/><rect x="3" y="12" width="1" height="1" fill="var(--px-fur)"/><rect x="4" y="12" width="1" height="1" fill="var(--px-fur)"/><rect x="5" y="12" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="12" width="1" height="1" fill="var(--px-fur)"/><rect x="7" y="12" width="1" height="1" fill="var(--px-fur)"/><rect x="8" y="12" width="1" height="1" fill="var(--px-fur)"/><rect x="9" y="12" width="1" height="1" fill="var(--px-fur)"/><rect x="10" y="12" width="1" height="1" fill="var(--px-fur)"/><rect x="11" y="12" width="1" height="1" fill="var(--px-fur)"/><rect x="12" y="12" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="12" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="13" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="13" width="1" height="1" fill="var(--px-fur)"/><rect x="3" y="13" width="1" height="1" fill="var(--px-fur)"/><rect x="4" y="13" width="1" height="1" fill="var(--px-fur)"/><rect x="5" y="13" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="13" width="1" height="1" fill="var(--px-fur)"/><rect x="7" y="13" width="1" height="1" fill="var(--px-fur)"/><rect x="8" y="13" width="1" height="1" fill="var(--px-fur)"/><rect x="9" y="13" width="1" height="1" fill="var(--px-fur)"/><rect x="10" y="13" width="1" height="1" fill="var(--px-fur)"/><rect x="11" y="13" width="1" height="1" fill="var(--px-fur)"/><rect x="12" y="13" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="13" width="1" height="1" fill="var(--px-fur)"/><rect x="14" y="13" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="14" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="14" width="1" height="1" fill="var(--px-fur)"/><rect x="3" y="14" width="1" height="1" fill="var(--px-fur)"/><rect x="4" y="14" width="1" height="1" fill="var(--px-ink)"/><rect x="5" y="14" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="14" width="1" height="1" fill="var(--px-fur)"/><rect x="7" y="14" width="1" height="1" fill="var(--px-fur)"/><rect x="8" y="14" width="1" height="1" fill="var(--px-fur)"/><rect x="9" y="14" width="1" height="1" fill="var(--px-fur)"/><rect x="10" y="14" width="1" height="1" fill="var(--px-fur)"/><rect x="11" y="14" width="1" height="1" fill="var(--px-ink)"/><rect x="12" y="14" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="14" width="1" height="1" fill="var(--px-fur)"/><rect x="14" y="14" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="15" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="15" width="1" height="1" fill="var(--px-fur)"/><rect x="3" y="15" width="1" height="1" fill="var(--px-fur)"/><rect x="4" y="15" width="1" height="1" fill="var(--px-ink)"/><rect x="5" y="15" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="15" width="1" height="1" fill="var(--px-fur)"/><rect x="7" y="15" width="1" height="1" fill="var(--px-fur)"/><rect x="8" y="15" width="1" height="1" fill="var(--px-fur)"/><rect x="9" y="15" width="1" height="1" fill="var(--px-fur)"/><rect x="10" y="15" width="1" height="1" fill="var(--px-fur)"/><rect x="11" y="15" width="1" height="1" fill="var(--px-ink)"/><rect x="12" y="15" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="15" width="1" height="1" fill="var(--px-fur)"/><rect x="14" y="15" width="1" height="1" fill="var(--px-ink)"/><rect x="15" y="15" width="1" height="1" fill="var(--px-ink)"/><rect x="16" y="15" width="1" height="1" fill="var(--px-ink)"/><rect x="17" y="15" width="1" height="1" fill="var(--px-ink)"/><rect x="18" y="15" width="1" height="1" fill="var(--px-ink)"/><rect x="1" y="16" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="3" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="4" y="16" width="1" height="1" fill="var(--px-ink)"/><rect x="5" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="6" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="7" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="8" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="9" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="10" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="11" y="16" width="1" height="1" fill="var(--px-ink)"/><rect x="12" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="13" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="14" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="15" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="16" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="17" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="18" y="16" width="1" height="1" fill="var(--px-fur)"/><rect x="19" y="16" width="1" height="1" fill="var(--px-ink)"/><rect x="2" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="3" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="4" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="5" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="6" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="7" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="8" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="9" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="10" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="11" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="12" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="13" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="14" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="15" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="16" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="17" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="18" y="17" width="1" height="1" fill="var(--px-ink)"/><rect x="3" y="6" width="1" height="1" fill="var(--px-ink)"/><rect x="4" y="6" width="1" height="1" fill="var(--px-ink)"/><rect x="11" y="6" width="1" height="1" fill="var(--px-ink)"/><rect x="12" y="6" width="1" height="1" fill="var(--px-ink)"/><rect x="3" y="7" width="1" height="1" fill="var(--px-ink)"/><rect x="4" y="7" width="1" height="1" fill="#fff"/><rect x="11" y="7" width="1" height="1" fill="var(--px-ink)"/><rect x="12" y="7" width="1" height="1" fill="#fff"/><g class="lids"><rect x="3" y="6" width="2" height="2" fill="var(--px-fur)"/><rect x="3" y="7" width="2" height="1" fill="var(--px-ink)"/><rect x="11" y="6" width="2" height="2" fill="var(--px-fur)"/><rect x="11" y="7" width="2" height="1" fill="var(--px-ink)"/></g></svg>
+      <p>Tecnologia é minha ferramenta, mas criar experiências que fazem sentido para pessoas é o que me move todos os dias.</p>
+    </blockquote>
+  </div>
+  <p class="wrap fine">© <span id="ano">2026</span> Lavínea Subtil · Serra, ES · game over? nunca.</p>
+</footer>
+
+<script>
+  document.getElementById('ano').textContent = new Date().getFullYear();
+
+  // Tema claro / escuro (escuro é o padrão)
+  var root = document.documentElement, tbtn = document.getElementById('tema');
+  function syncLabel() {
+    var light = root.getAttribute('data-theme') === 'light';
+    tbtn.setAttribute('aria-label', light ? 'Mudar para o tema escuro' : 'Mudar para o tema claro');
+    tbtn.title = light ? 'Tema escuro' : 'Tema claro';
+  }
+  syncLabel();
+  tbtn.addEventListener('click', function () {
+    var light = root.getAttribute('data-theme') === 'light';
+    if (light) root.removeAttribute('data-theme'); else root.setAttribute('data-theme', 'light');
+    try { localStorage.setItem('tema', light ? 'dark' : 'light'); } catch (e) {}
+    syncLabel();
+  });
+
+  // Copiar e-mail
+  var btn = document.getElementById('copy');
+  btn.addEventListener('click', function () {
+    var el = document.getElementById('email');
+    function done() { btn.textContent = 'Copiado'; setTimeout(function () { btn.textContent = 'Copiar'; }, 2000); }
+    function select() { var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(el.textContent).then(done, select);
+    else select();
+  });
+</script>
+</body>
+</html>
