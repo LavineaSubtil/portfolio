@@ -1,6 +1,6 @@
 # Portfólio · Lavínea Subtil
 
-Site pessoal de Lavínea Subtil, desenvolvedora full stack com foco em front-end e UI/UX.
+Site pessoal de Lavínea Subtil, desenvolvedora front-end e UI/UX que usa IA e automação para construir soluções de ponta a ponta.
 
 - Experiência no Banestes Asset Management
 - Alana, persona ilustrada para o Banestes Investimentos
